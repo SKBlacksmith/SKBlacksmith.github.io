@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CrossNetwork</title>
+    <meta name="description" content="Public projects by CrossNetwork: tools for Linux, media and the things that run in the park." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #101014;
+        --card: #17171d;
+        --line: #2a2a35;
+        --text: #e8e8ee;
+        --muted: #9a9aa8;
+        --accent: #ffa600;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      main { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+
+      header { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; }
+      .mark {
+        flex: 0 0 auto;
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        color: #14140f;
+        background: linear-gradient(135deg, #ffc766, var(--accent));
+        box-shadow: 0 6px 18px rgba(255, 166, 0, 0.18);
+      }
+      h1 { margin: 0 0 2px; font-size: 24px; letter-spacing: -0.01em; }
+      .sub { margin: 0; color: var(--muted); font-size: 14px; }
+
+      .grid {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .card {
+        height: 100%;
+        padding: 16px 18px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--card);
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .card:hover { border-color: #3a3a48; }
+      .row { display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+      .card h2 { margin: 0; font-size: 16px; }
+      .card h2 a { color: var(--text); text-decoration: none; }
+      .card h2 a:hover { color: var(--accent); }
+      .card p { margin: 0; color: var(--muted); font-size: 13.5px; }
+      .meta {
+        margin-top: auto;
+        padding-top: 8px;
+        font-size: 12.5px;
+        color: #77778a;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .meta b { color: var(--text); font-weight: 600; }
+      .live {
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-decoration: none;
+        border: 1px solid rgba(255, 166, 0, 0.35);
+        border-radius: 999px;
+        padding: 1px 9px;
+      }
+      .live:hover { background: rgba(255, 166, 0, 0.12); }
+
+      footer {
+        margin-top: 32px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 12.5px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      footer .copy { margin-right: auto; }
+      footer a { color: var(--text); text-decoration: underline dotted; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="mark" aria-hidden="true">CN</span>
+        <div>
+          <h1>CrossNetwork</h1>
+          <p class="sub">Public projects: tools for Linux, media and the things that run in the park.</p>
+        </div>
+      </header>
+
+      <ul class="grid">
+        <li>
+          <div class="card">
+            <div class="row">
+              <h2><a href="https://github.com/SKBlacksmith/sam">SAM</a></h2>
+              <a class="live" href="https://sam.crossnetwork.uk">Open</a>
+            </div>
+            <p>Addons Manager for Stremio: order, logos and Home visibility for your addon collection.</p>
+            <div class="meta"><span>JavaScript · Vue</span><span><b>sam.crossnetwork.uk</b></span></div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="row">
+              <h2><a href="https://github.com/SKBlacksmith/CrossStats">CrossStats</a></h2>
+            </div>
+            <p>System stats in your KDE Plasma panel, plus a rich, paginated tooltip.</p>
+            <div class="meta"><span>Python · KDE Plasma</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="row">
+              <h2><a href="https://github.com/SKBlacksmith/qt-esrgan-upscaler">qt-esrgan-upscaler</a></h2>
+            </div>
+            <p>Native KDE/Qt6 desktop front-end for batch image upscaling with Real-ESRGAN (ncnn/Vulkan).</p>
+            <div class="meta"><span>Python · Qt6</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="row">
+              <h2><a href="https://github.com/SKBlacksmith/stremio-web-shell">stremio-web-shell</a></h2>
+            </div>
+            <p>Stremio web client (v5) in a thin Electron shell for Arch Linux, with a self-managed streaming server.</p>
+            <div class="meta"><span>JavaScript · Electron · Arch</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="row">
+              <h2><a href="https://github.com/SKBlacksmith/Wine-Crossroads">Wine-Crossroads</a></h2>
+            </div>
+            <p>Patched builds of Wine.</p>
+            <div class="meta"><span>C · Wine</span></div>
+          </div>
+        </li>
+      </ul>
+
+      <footer>
+        <span class="copy">© CrossNetwork</span>
+        <a href="https://github.com/SKBlacksmith">GitHub</a>
+      </footer>
+    </main>
+  </body>
+</html>
